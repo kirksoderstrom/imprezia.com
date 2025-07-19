@@ -6,6 +6,7 @@
   <title>Contact – Imprezia</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -18,14 +19,27 @@
 
     header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 1.25rem 2rem;
+      padding: 1rem 2rem;
       border-bottom: 1px solid #e0e0e0;
     }
 
     .logo {
       height: 28px;
       display: block;
+    }
+
+    .contact-icon {
+      color: #ec222a;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 18px;
+      vertical-align: middle;
     }
 
     main {
@@ -51,13 +65,20 @@
       .logo {
         height: 24px;
       }
+
+      .material-symbols-outlined {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html" title="Home">
+    <a href="index.html">
       <img src="imprezia_wordmark.svg" alt="Imprezia" class="logo" />
+    </a>
+    <a href="contact.html" class="contact-icon" title="Contact">
+      <span class="material-symbols-outlined">mail</span>
     </a>
   </header>
 
