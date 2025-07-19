@@ -4,10 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Imprezia</title>
+
+  <!-- Google Font: Cormorant Garamond Light -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <!-- Font Awesome for envelope icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
       line-height: 1.6;
       color: #111;
       background-color: #fff;
@@ -27,9 +34,8 @@
 
     .contact-icon {
       text-decoration: none;
-      font-size: 1.25rem;
-      color: #e02121;
-      font-weight: bold;
+      font-size: 1.5rem;
+      color: #ec222a;
     }
 
     main {
@@ -68,7 +74,7 @@
       }
 
       .contact-icon {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
 
       .logomark {
@@ -80,7 +86,9 @@
 <body>
   <header>
     <img src="imprezia_wordmark.svg" alt="Imprezia" class="logo" />
-    <a href="contact.html" class="contact-icon">Contact</a>
+    <a href="contact.html" class="contact-icon" aria-label="Contact">
+      <i class="fas fa-envelope"></i>
+    </a>
   </header>
 
   <main>
