@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Imprezia</title>
   <meta name="description" content="Imprezia is the architecture studio of Kirk Soderstrom, focused on meaningful design." />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       line-height: 1.5;
       color: #111;
       background-color: #fff;
@@ -25,6 +26,7 @@
       padding: 1rem 2rem;
       height: 64px;
       border-bottom: 1px solid #e0e0e0;
+      box-sizing: border-box;
     }
 
     .logo {
@@ -38,12 +40,16 @@
       display: flex;
       align-items: center;
       height: 28px;
+      width: 28px;
+      justify-content: center;
     }
 
     .icon-wrapper {
       display: flex;
       align-items: center;
+      justify-content: center;
       height: 100%;
+      width: 100%;
     }
 
     .material-symbols-outlined {
@@ -57,6 +63,10 @@
       padding: 2rem;
     }
 
+    .home-content {
+      font-size: 1.375rem;
+    }
+
     p {
       margin-bottom: 1.5rem;
     }
@@ -64,7 +74,7 @@
     .logomark-container {
       display: flex;
       justify-content: center;
-      margin: 2rem 0;
+      margin: 1rem 0;
     }
 
     .logomark {
@@ -77,12 +87,17 @@
         padding: 1.25rem;
       }
 
-      body {
+      .home-content {
         font-size: 1.125rem;
       }
 
       .logo {
         height: 24px;
+      }
+
+      .contact-icon {
+        height: 24px;
+        width: 24px;
       }
 
       .material-symbols-outlined {
@@ -108,10 +123,12 @@
   </header>
 
   <main>
-    <p>We believe design is an act of optimism.</p>
-    <p>We pursue an architecture of resonance — shaping inspiring places to inhabit. Each project is borne out of a spirited dialogue between the client, site, structure, and the senses.</p>
-    <p>Our work emerges from a rigorous process that gives way to clarity, originality, and emotion in built form — informed by context, environment, and the invisible poetry that give form to meaning.</p>
-    <p>We craft spaces that reveal themselves slowly, unfolding in time — designed to enliven the senses through a symphony of proportion, material, and light — and to elevate the human spirit.</p>
+    <div class="home-content">
+      <p>We believe design is an act of optimism.</p>
+      <p>We pursue an architecture of resonance — shaping inspiring places to inhabit. Each project is borne out of a spirited dialogue between the client, site, structure, and the senses.</p>
+      <p>Our work emerges from a rigorous process that gives way to clarity, originality, and emotion in built form — informed by context, environment, and the invisible poetry that give form to meaning.</p>
+      <p>We craft spaces that reveal themselves slowly, unfolding in time — designed to enliven the senses through a symphony of proportion, material, and light — and to elevate the human spirit.</p>
+    </div>
 
     <div class="logomark-container">
       <img src="imprezia_logo.svg" alt="Imprezia Mark" class="logomark" />
