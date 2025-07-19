@@ -6,7 +6,7 @@
   <title>Imprezia</title>
   <meta name="description" content="Imprezia is the architecture studio of Kirk Soderstrom, focused on meaningful design." />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
     body {
@@ -35,15 +35,13 @@
     .contact-icon {
       color: #ec222a;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      min-width: 24px;
     }
 
-    .material-symbols-outlined {
+    .material-symbols-outlined.mail-icon {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       font-size: 18px;
       vertical-align: middle;
+      transition: all 0.2s ease;
     }
 
     main {
@@ -68,6 +66,10 @@
     }
 
     @media (max-width: 600px) {
+      main {
+        padding: 1.25rem;
+      }
+
       body {
         font-size: 1.125rem;
       }
@@ -76,7 +78,7 @@
         height: 24px;
       }
 
-      .material-symbols-outlined {
+      .material-symbols-outlined.mail-icon {
         font-size: 24px;
       }
 
@@ -92,7 +94,7 @@
       <img src="imprezia_wordmark.svg" alt="Imprezia" class="logo" />
     </a>
     <a href="contact.html" class="contact-icon" title="Contact">
-      <span class="material-symbols-outlined">mail</span>
+      <span class="material-symbols-outlined mail-icon">mail</span>
     </a>
   </header>
 
