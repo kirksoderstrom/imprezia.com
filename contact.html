@@ -6,10 +6,10 @@
   <title>Contact – Imprezia</title>
   <meta name="description" content="Contact Kirk Soderstrom, founder of Imprezia, an architecture studio driven by clarity, material, and light." />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
-    body {
+    body.contact-page {
       margin: 0;
       font-family: 'EB Garamond', Georgia, serif;
       font-size: 1rem;
@@ -35,15 +35,17 @@
     .contact-icon {
       color: #ec222a;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      min-width: 24px;
     }
 
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    .material-symbols-outlined.mail-icon {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       font-size: 18px;
       vertical-align: middle;
+      transition: all 0.2s ease;
+    }
+
+    body.contact-page .material-symbols-outlined.mail-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
 
     main {
@@ -70,19 +72,19 @@
         height: 24px;
       }
 
-      .material-symbols-outlined {
+      .material-symbols-outlined.mail-icon {
         font-size: 24px;
       }
     }
   </style>
 </head>
-<body>
+<body class="contact-page">
   <header>
     <a href="index.html" title="Home">
       <img src="imprezia_wordmark.svg" alt="Imprezia" class="logo" />
     </a>
     <a href="contact.html" class="contact-icon" title="Contact">
-      <span class="material-symbols-outlined">mail</span>
+      <span class="material-symbols-outlined mail-icon">mail</span>
     </a>
   </header>
 
