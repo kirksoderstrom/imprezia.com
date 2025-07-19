@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eb262c;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="27.37" y="54.72" width="25.81" height="25.81"/>
+  <rect class="cls-1" x="27.37" y="82.19" width="25.81" height="25.81"/>
+  <rect class="cls-1" x="54.76" y="54.76" width="53.24" height="53.24"/>
+  <rect class="cls-1" x="54.76" width="53.24" height="53.24"/>
+  <rect class="cls-1" width="53.25" height="53.24"/>
+  <rect class="cls-1" x="13.73" y="95.92" width="12.08" height="12.08"/>
+  <rect class="cls-1" x="6.92" y="95.92" width="5.27" height="5.27"/>
+  <rect class="cls-1" y="95.92" width="5.27" height="5.27"/>
+  <rect class="cls-1" x="6.92" y="102.73" width="5.27" height="5.27"/>
+  <rect class="cls-1" y="102.73" width="5.27" height="5.27"/>
+  <rect class="cls-1" x="13.73" y="82.19" width="12.08" height="12.08"/>
+  <rect class="cls-1" y="82.19" width="12.08" height="12.08"/>
+  <rect class="cls-1" y="54.72" width="25.82" height="25.81"/>
+</svg>
