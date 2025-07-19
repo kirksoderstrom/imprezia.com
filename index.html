@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Imprezia</title>
   <meta name="description" content="Imprezia is the architecture studio of Kirk Soderstrom, focused on meaningful design." />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
@@ -43,6 +44,10 @@
       vertical-align: middle;
     }
 
+    .contact-icon.active .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
     main {
       max-width: 720px;
       margin: 0 auto;
@@ -65,10 +70,6 @@
     }
 
     @media (max-width: 600px) {
-      main {
-        padding: 1.25rem;
-      }
-
       body {
         font-size: 1.125rem;
       }
