@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
-    body.contact-page {
+    body {
       margin: 0;
       font-family: 'EB Garamond', Georgia, serif;
       font-size: 1rem;
@@ -35,17 +35,20 @@
     .contact-icon {
       color: #ec222a;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      height: 28px;
     }
 
-    .material-symbols-outlined.mail-icon {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      font-size: 18px;
-      vertical-align: middle;
-      transition: all 0.2s ease;
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
 
-    body.contact-page .material-symbols-outlined.mail-icon {
+    .material-symbols-outlined {
       font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 18px;
     }
 
     main {
@@ -63,6 +66,17 @@
       margin-bottom: 0.5rem;
     }
 
+    .logomark-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+
+    .logomark {
+      width: 60px;
+      height: auto;
+    }
+
     @media (max-width: 600px) {
       body {
         font-size: 0.95rem;
@@ -72,19 +86,25 @@
         height: 24px;
       }
 
-      .material-symbols-outlined.mail-icon {
+      .material-symbols-outlined {
         font-size: 24px;
+      }
+
+      .logomark {
+        width: 50px;
       }
     }
   </style>
 </head>
-<body class="contact-page">
+<body>
   <header>
     <a href="index.html" title="Home">
       <img src="imprezia_wordmark.svg" alt="Imprezia" class="logo" />
     </a>
     <a href="contact.html" class="contact-icon" title="Contact">
-      <span class="material-symbols-outlined mail-icon">mail</span>
+      <span class="icon-wrapper">
+        <span class="material-symbols-outlined">mail</span>
+      </span>
     </a>
   </header>
 
@@ -92,6 +112,10 @@
     <div class="contact-info">
       <p><strong>Kirk Soderstrom</strong></p>
       <p><a href="mailto:ks@imprezia.com">ks@imprezia.com</a></p>
+    </div>
+
+    <div class="logomark-container">
+      <img src="imprezia_logo.svg" alt="Imprezia Mark" class="logomark" />
     </div>
   </main>
 </body>
