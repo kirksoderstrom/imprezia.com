@@ -73,6 +73,18 @@
       margin-bottom: 0.5rem;
     }
 
+    .logomark-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+
+    .logomark {
+      width: 60px;
+      height: auto;
+      padding: 1rem;
+    }
+
     @media (max-width: 600px) {
       .logo {
         height: 24px;
@@ -85,6 +97,10 @@
 
       .material-symbols-outlined {
         font-size: 24px;
+      }
+
+      .logomark {
+        width: 50px;
       }
     }
   </style>
@@ -104,6 +120,10 @@
   <main>
     <div class="contact-info">
       <p>For inquiries, please contact <a href="mailto:ks@imprezia.com">ks@imprezia.com</a></p>
+    </div>
+
+    <div class="logomark-container">
+      <img src="imprezia_logo.svg" alt="Imprezia Mark" class="logomark" />
     </div>
   </main>
 </body>
